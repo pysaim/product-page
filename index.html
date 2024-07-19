@@ -15,6 +15,7 @@
   <script src="main.js" defer></script>
   <script src="gallery.js" defer></script>
   <script src="cart.js" defer></script>
+  <script src="rating.js"></script>
 
 </head>
 
@@ -200,69 +201,27 @@
         Reviews
       </h2>
 
-      <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis hic alias quasi quo
-        itaque culpa ducimus numquam aut laboriosam reiciendis non unde molestias provident, at sed cum illum excepturi.
-      </p>
+      
 
-      <div class="reviews">
-        <div class="review">
-          <div class="head-review">
-            <img class="imgg" src="./images/pakistan-flag-medium.png" width="250px">
-          </div>
-          <div class="body-review">
-            <div class="namve-review">Ali.j</div>
-            <div class="place-review">Pakistan</div>
+      <div class="containeer">
+        <div class="rating-container">
             <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="1">&#9733;</span>
             </div>
-            <div class="desc-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, aspernatur dolore
-              dicta reprehenderit maiores sint alias perferendis harum saepe excepturi earum pariatur debitis deserunt,
-              repellendus voluptatem, eveniet temporibus porro nesciunt.</div>
-          </div>
+            <div id="rating-value">Your rating: <span id="rating">0</span></div>
+            <textarea id="review-text" placeholder="Write your review here..."></textarea>
+            <button id="submit-button">Submit Review</button>
         </div>
-        <div class="review">
-          <div class="head-review">
-            <img class="imgg" src="./images/brazil-flag-medium.png" width="250px">
-          </div>
-          <div class="body-review">
-            <div class="namve-review">Ana</div>
-            <div class="place-review">Brazil</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-            </div>
-            <div class="desc-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, aspernatur dolore
-              dicta reprehenderit maiores sint alias perferendis harum saepe excepturi earum pariatur debitis deserunt,
-              repellendus voluptatem, eveniet temporibus porro nesciunt.</div>
-          </div>
+
+        <div id="reviews-container">
+            
+            <ul id="reviews-list"></ul>
         </div>
-        <div class="review">
-          <div class="head-review">
-            <img class="imgg" src="./images//saudi-arabia-flag-medium.png" width="250px">
-          </div>
-          <div class="body-review">
-            <div class="namve-review">Nasir</div>
-            <div class="place-review">KSA</div>
-            <div class="rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <div class="desc-review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, aspernatur dolore
-              dicta reprehenderit maiores sint alias perferendis harum saepe excepturi earum pariatur debitis deserunt,
-              repellendus voluptatem, eveniet temporibus porro nesciunt.</div>
-          </div>
-        </div>
-      </div>
+    </div>
 
     </div>
   </div>
